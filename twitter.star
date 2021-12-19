@@ -27,16 +27,16 @@ def main(config):
         cache.set("formatted_followers_count", formatted_followers_count, ttl_seconds=240)
 
 
+    screen_name_child = render.Text(color='#3c3c3c', content="@" + screen_name)
+
     if config.get('scroll', False) or len(screen_name) > 8:
         screen_name_child = render.Marquee(
             width=64,
-            child=render.Text(color='#3c3c3c', content="@" + screen_name),
+            child=screen_name_child,
             offset_start=5,
             offset_end=32,
         )
-    else:
-        screen_name_child = render.Text(color='#3c3c3c', content="@" + screen_name)
-    
+
     return render.Root(
         child = render.Box(
             render.Column(
