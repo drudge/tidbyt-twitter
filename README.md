@@ -1,5 +1,5 @@
 # tidbyt-twitter
-Twitter application for Tidbyt devices
+Twitter Followers application for Tidbyt devices. Consider using [homebridge-tydbit](https://github.com/drudge/homebridge-tidbyt) to install and keep this applet updated.
 
 ## Quick start
 1. Install [`pixlet`](https://github.com/tidbyt/pixlet)
